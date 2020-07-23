@@ -9,7 +9,7 @@ counter
 end
 
 def current_player(board)
-  move(board) = turn_count
+  move(board) == turn_count
   if turn_count.even? == true
     return "O"
   else
