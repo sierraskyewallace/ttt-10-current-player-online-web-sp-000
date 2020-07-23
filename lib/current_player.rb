@@ -9,13 +9,13 @@ counter
 end
 
 def current_player(board)
-  move(board) == turn_count % 2
-  if turn_count.even? == true
-    return "O"
-  else
+  if turn_count(board) % 2 == true
     return "X"
+  else
+    return "O"
   end
 end
+
 
 
 
